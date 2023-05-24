@@ -1,0 +1,275 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EduTrainTest</title>
+    <meta name="description" content="Sufee Admin - HTML5 Admin Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <link rel="apple-touch-icon" href="{{ url_for('.static',filename='apple-icon.png') }}">
+    <link rel="shortcut icon" href="{{ url_for('.static',filename='favicon.ico') }}">
+
+    <link rel="stylesheet" href="{{ url_for('.static',filename='assets/css/normalize.css') }}">
+    <link rel="stylesheet" href="{{ url_for('.static',filename='assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('.static',filename='assets/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('.static',filename='assets/css/themify-icons.css') }}">
+    <link rel="stylesheet" href="{{ url_for('.static',filename='assets/css/flag-icon.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('.static',filename='assets/css/cs-skin-elastic.css') }}">
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap-select.less"> -->
+    <link rel="stylesheet" href="{{ url_for('.static',filename='assets/scss/style.css') }}">
+    <link href="{{ url_for('.static',filename='assets/css/lib/vector-map/jqvmap.min.css') }}" rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
+
+</head>
+<body>
+
+
+        <!-- Left Panel -->
+
+    <aside id="left-panel" class="left-panel">
+        <nav class="navbar navbar-expand-sm navbar-default">
+
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="./">EduTrainTest</a>
+                <a class="navbar-brand hidden" href="./"><img src="images/logo2.png" alt="Logo"></a>
+            </div>
+
+            <div id="main-menu" class="main-menu collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="/result"> <i class="menu-icon fa fa-dashboard"></i>Check Your Performance </a>
+                    </li>
+                    <h3 class="menu-title"><font color="white">Online Tests</font></h3><!-- /.menu-title -->
+
+                    <li class="menu-item-has-children dropdown">
+                        <a href="/index" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-book">Test1(Random Questions)</i></a>
+                        <a href="/test2" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-book">Test2</i></a>
+                        <a href="/test3" class="dropdown-toggle" dria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-book">Test3</i></a>
+                        <a href="/test4" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-book">Test4</i></a>   
+                    </li>
+
+                    <h3 class="menu-title"><font color="white">Training</font></h3><!-- /.menu-title -->
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-laptop"></i>Aptitude</a>
+                        <ul class="sub-menu children dropdown-menu">
+
+                            <li><i class="fa fa-book"></i><a href="https://www.sawaal.com/aptitude-reasoning/quantitative-aptitude-arithmetic-ability/problems-on-trains-questions-and-answers.html">Problems on Trains</a></li>
+                            <li><i class="fa fa-book"></i><a href="#">Time and Distance</a></li>
+                            <li><i class="fa fa-book"></i><a href="#">Height and Distance</a></li>
+                            <li><i class="fa fa-book"></i><a href="#">Time and Work</a></li>
+                            <li><i class="fa fa-book"></i><a href="#">Simple Interest</a></li>
+                            <li><i class="fa fa-book"></i><a href="#">Compound Interest</a></li>
+                            <li><i class="fa fa-book"></i><a href="#">Profit and Loss</a></li>
+                            <li><i class="fa fa-book"></i><a href="#">Partnership</a></li>
+                            <li><i class="fa fa-book"></i><a href="#">Percentage</a></li>
+                            <li><i class="fa fa-book"></i><a href="#">Problems on Ages</a></li>
+                            <li><i class="fa fa-book"></i><a href="#">Calendar</a></li>
+                            <li><i class="fa fa-book"></i><a href="#">Clock</a></li>
+                            <li><i class="fa fa-book"></i><a href="#">Average</a></li>
+                            <li><i class="fa fa-book"></i><a href="#">Area</a></li>
+                            <li><i class="fa fa-book"></i><a href="#">Volume and Surface Area</a></li>
+                            <li><i class="fa fa-book"></i><a href="#">Permutation and Combination</a></li>
+                            <li><i class="fa fa-book"></i><a href="#">Numbers</a></li>
+                            <li><i class="fa fa-book"></i><a href="#">Problems on Numbers</a></li>
+                            <li><i class="fa fa-book"></i><a href="#">Problems on H.C.F and L.C.M</a></li>
+                            <li><i class="fa fa-book"></i><a href="#">Decimal Fraction</a></li>
+                            <li><i class="fa fa-book"></i><a href="#">Simplification</a></li>
+                            <li><i class="fa fa-book"></i><a href="#">Square Root and Cube Root</a></li>
+                            <li><i class="fa fa-book"></i><a href="#">Surds and Indices</a></li>
+                            <li><i class="fa fa-book"></i><a href="#">Ratio and Proportion</a></li>
+                            <li><i class="fa fa-book"></i><a href="#">Chain Rule</a></li>
+                            <li><i class="fa fa-book"></i><a href="#">Pipes and Cistern</a></li>
+                            <li><i class="fa fa-book"></i><a href="#">Boats and Streams</a></li>
+                            <li><i class="fa fa-book"></i><a href="#">Alligation or Mixture</a></li>
+                            <li><i class="fa fa-book"></i><a href="#">Logarithm</a></li>
+                            <li><i class="fa fa-book"></i><a href="#">Races and Games</a></li>
+                            <li><i class="fa fa-book"></i><a href="#">Stocks and Shares</a></li>
+                            <li><i class="fa fa-book"></i><a href="#">Probability</a></li>
+                            <li><i class="fa fa-book"></i><a href="#">True Discount</a></li>
+                            <li><i class="fa fa-book"></i><a href="#">Banker's Discount</a></li>
+                            <li><i class="fa fa-book"></i><a href="#">Odd Man Out and Series</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Reasoning</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="fa fa-table"></i><a href="#">Number Series</a></li>
+                            <li><i class="fa fa-table"></i><a href="#">Letter and Symbol Series</a></li>
+                            <li><i class="fa fa-table"></i><a href="#">Verbal Classification</a></li>
+                            <li><i class="fa fa-table"></i><a href="#">Essential Part</a></li>
+                            <li><i class="fa fa-table"></i><a href="#">Analogies</a></li>
+                            <li><i class="fa fa-table"></i><a href="#">Artificial Language</a></li>
+                            <li><i class="fa fa-table"></i><a href="#">Matching Definitions</a></li>
+                            <li><i class="fa fa-table"></i><a href="#">Making Judgments</a></li>
+                            <li><i class="fa fa-table"></i><a href="#">Verbal Reasoning</a></li>
+                            <li><i class="fa fa-table"></i><a href="#">Logical Problems & Logical Games</a></li>
+                            <li><i class="fa fa-table"></i><a href="#">Analyzing Arguments</a></li>
+                            <li><i class="fa fa-table"></i><a href="#">Statement and Assumption</a></li>
+                            <li><i class="fa fa-table"></i><a href="#">Course of Action</a></li>
+                            <li><i class="fa fa-table"></i><a href="#">Statement and Conclusion</a></li>
+                            <li><i class="fa fa-table"></i><a href="#">Theme Detection</a></li>
+                            <li><i class="fa fa-table"></i><a href="#">Cause and Effect</a></li>
+                            <li><i class="fa fa-table"></i><a href="#">Statement and Argument</a></li>
+                            <li><i class="fa fa-table"></i><a href="#">Logical Deduction</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Programming</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="menu-icon fa fa-th"></i><a href="#">C programming</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="#">C++</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="#">Java</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="#">C#</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Technical MCQs</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="menu-icon fa fa-th"></i><a href="#">Networking Questions</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="#">Database Questions</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="#">Data Structures</a></li>
+                        </ul>
+                    </li>
+                    <h3 class="menu-title"><font color="white">Extra Resources..</font></h3><!-- /.menu-title -->
+
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-book"><br>E-Books</i></a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="fa fa-book"></i><a href="https://drive.google.com/file/d/1cF8dv_11ebyTQHVtOo6pmr15uYQdRaKI/view">C programming</a></li>
+                            <li><i class="fa fa-book"></i><a href="http://www.mldcollege.com/panel/programs/Object%20Oriented%20Programming%20with%20C__-Bal%20-%20E.Balagurusamy.pdf">C++</a></li>
+                            <li><i class="fa fa-book"></i><a href="http://iiti.ac.in/people/~tanimad/JavaTheCompleteReference.pdf">Java</a></li>
+                            <li><i class="fa fa-book"></i><a href="https://www.introprogramming.info/wp-content/uploads/2013/07/Books/CSharpEn/Fundamentals-of-Computer-Programming-with-CSharp-Nakov-eBook-v2013.pdf">C#</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </aside><!-- /#left-panel -->
+
+    <!-- Left Panel -->
+
+    <!-- Right Panel -->
+
+    <div id="right-panel" class="right-panel">
+
+        <!-- Header-->
+        <header id="header" class="header">
+
+            <div class="header-menu">
+
+                <div class="col-sm-7">
+                    <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
+                    <div class="header-left">
+                        <button class="search-trigger"><i class="fa fa-search"></i></button>
+                        <div class="form-inline">
+                            <form class="search-form">
+                                <input class="form-control mr-sm-2" type="text" placeholder="Search ..." aria-label="Search">
+                                <button class="search-close" type="submit"><i class="fa fa-close"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-5">
+                    <div class="user-area dropdown float-right">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="user-avatar rounded-circle" src="{{ url_for('.static',filename='avatar.png') }}" alt="User Avatar">
+                        </a>
+
+                        <div class="user-menu dropdown-menu">
+                                <a class="nav-link" href="#"><i class="fa fa- user"></i>My Profile</a>
+
+                                <a class="nav-link" href="#"><i class="fa fa -cog"></i>Settings</a>
+
+                                <a class="nav-link" href="/logout"><i class="fa fa-power -off"></i><b>Logout</b></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header><!-- /header -->
+        <!-- Header-->
+
+        <div class="breadcrumbs">
+            <div class="col-sm-4">
+                <div class="page-header float-left">
+                    <div class="page-title">
+                        <h1>Dashboard</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="page-header float-right">
+                    <div class="page-title">
+                        <ol class="breadcrumb text-right">
+                            <li class="active"><b><font size="5">Welcome, {{username}}</font></b></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content mt-3">
+
+            <div class="col-sm-12" width="12">
+                <div class="alert  alert-success alert-dismissible fade show" role="alert">
+                  <span class="badge badge-pill badge-success">Your Performance</span>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+
+            <br>
+            <br>
+           <div class="col-sm-6 col-lg-12" style="overflow-y: auto; height: 500px;">
+                    
+                    <h6><b><u>Your Results:</u></b></h6> 
+
+                    <table id="bootstrap-data-table" class="table table-striped table-bordered">
+                    <thead class="bg-light">
+                    <th>Test Name</th>
+                    <th>Correct</th>
+                    <th>Time</th>
+                    </thead>
+                    <tbody>
+                      {% for row in rows %}
+                    <tr>
+                      <td>{{row["testname"]}}</td>
+                      <td>{{row["correct"]}}</td>
+                      <td>{{row["timestamps"]}}</td>
+                    </tr> 
+            
+                  {% endfor %}
+            </div>
+            <!--/.col-->
+
+    <!-- Right Panel -->
+
+    <script src="{{ url_for('.static',filename='assets/js/vendor/jquery-2.1.4.min.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="{{ url_for('.static',filename='assets/js/plugins.js') }}"></script>
+    <script src="{{ url_for('.static',filename='assets/js/main.js') }}"></script>
+
+
+    <script src="{{ url_for('.static',filename='assets/js/lib/chart-js/Chart.bundle.js') }}"></script>
+    <script src="{{ url_for('.static',filename='assets/js/dashboard.js') }}"></script>
+    <script src="{{ url_for('.static',filename='assets/js/widgets.js') }}"></script>
+    <script src="{{ url_for('.static',filename='assets/js/lib/vector-map/jquery.vmap.js') }}"></script>
+    <script src="{{ url_for('.static',filename='assets/js/lib/vector-map/jquery.vmap.min.js') }}"></script>
+    <script src="{{ url_for('.static',filename='assets/js/lib/vector-map/jquery.vmap.sampledata.js') }}"></script>
+    <script src="{{ url_for('.static',filename='assets/js/lib/vector-map/country/jquery.vmap.world.js') }}"></script>
+    
+</body>
+</html>
