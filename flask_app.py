@@ -201,12 +201,15 @@ def list():
 @app.route('/sub_res', methods = ['GET'])
 def sub_res():
     con = sql.connect("main.db")
-    correct = request.args.get('correct')
+    correct = int(request.args.get('correct'))
     testname = request.args.get('testname')
     currentTime = datetime.datetime.now()
-    print('*****************',testname,correct)
+    resultstatus = "Failed"
+    if correct > 6:
+      resultstatus = "Passed"
+    print('*****************',testname,correct,resultstatus)
     cur = con.cursor()
-    cur.execute("INSERT INTO result(username,correct,testname,timestamps)VALUES(?,?,?,?)",(g.user,correct,testname,currentTime,))
+    cur.execute("INSERT INTO result(username,correct,testname,timestamps,Status)VALUES(?,?,?,?,?)",(g.user,correct,testname,currentTime,resultstatus,))
     con.commit()
     con.close()
     return redirect("/dashboard")
@@ -216,12 +219,15 @@ def sub_res():
 @app.route('/sub_res2', methods = ['GET'])
 def sub_res2():
     con = sql.connect("main.db")
-    correct = request.args.get('correct')
+    correct = int(request.args.get('correct'))
     testname = request.args.get('testname')
     currentTime = datetime.datetime.now()
-    print('*',testname,correct)
+    resultstatus = "Failed"
+    if correct > 6:
+      resultstatus = "Passed"
+    print('*****************',testname,correct,resultstatus)
     cur = con.cursor()
-    cur.execute("INSERT INTO result(username,correct,testname,timestamps)VALUES(?,?,?,?)",(g.user,correct,testname,currentTime,))
+    cur.execute("INSERT INTO result(username,correct,testname,timestamps,Status)VALUES(?,?,?,?,?)",(g.user,correct,testname,currentTime,resultstatus,))
     con.commit()
     con.close()
     return redirect("/dashboard")
@@ -230,12 +236,15 @@ def sub_res2():
 @app.route('/sub_res3', methods = ['GET'])
 def sub_res3():
     con = sql.connect("main.db")
-    correct = request.args.get('correct')
+    correct = int(request.args.get('correct'))
     testname = request.args.get('testname')
     currentTime = datetime.datetime.now()
-    print('*',testname,correct)
+    resultstatus = "Failed"
+    if correct > 6:
+      resultstatus = "Passed"
+    print('*****************',testname,correct,resultstatus)
     cur = con.cursor()
-    cur.execute("INSERT INTO result(username,correct,testname,timestamps)VALUES(?,?,?,?)",(g.user,correct,testname,currentTime,))
+    cur.execute("INSERT INTO result(username,correct,testname,timestamps,Status)VALUES(?,?,?,?,?)",(g.user,correct,testname,currentTime,resultstatus,))
     con.commit()
     con.close()
     return redirect("/dashboard")
