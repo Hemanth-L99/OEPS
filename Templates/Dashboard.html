@@ -1,14 +1,10 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> 
-<html class="no-js" lang=""> <!--<![endif]-->
+<html class="no-js" lang="">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>EduTrainTest</title>
-    <meta name="description" content="Sufee Admin - HTML5 Admin Template">
+    <meta name="description" content="Hemanth Website">
     <meta name="viewport" content="width=device-width, initial-scale=1">
  
     <link rel="apple-touch-icon" href="{{ url_for('.static',filename='apple-icon.png') }}">
@@ -55,7 +51,7 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand" href="./">EduTrainTest</a>
-                <a class="navbar-brand hidden" href="./"><img src="images/logo2.png" alt="Logo"></a>
+                <a class="navbar-brand hidden" href="./"></a>
             </div>
 
             <div id="main-menu" class="main-menu collapse navbar-collapse">
@@ -76,38 +72,26 @@
 
                     <h3 class="menu-title"><font color="white">Practice</font></h3><!-- /.menu-title -->
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-laptop"></i>Aptitude</a>
+                        <a href="/index" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-laptop"></i>Aptitude</a>
                     </li>
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Reasoning</a>
+                        <a href="/index" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Reasoning</a>
                     </li>
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Programming</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-th"></i><a href="#">C programming</a></li>
-                            <li><i class="menu-icon fa fa-th"></i><a href="#">C++</a></li>
-                            <li><i class="menu-icon fa fa-th"></i><a href="#">Java</a></li>
-                            <li><i class="menu-icon fa fa-th"></i><a href="#">C#</a></li>
-                        </ul>
+                        <a href="/index" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Programming</a>
                     </li>
-
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Technical MCQs</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-th"></i><a href="#">Networking Questions</a></li>
-                            <li><i class="menu-icon fa fa-th"></i><a href="#">Database Questions</a></li>
-                            <li><i class="menu-icon fa fa-th"></i><a href="#">Data Structures</a></li>
-                        </ul>
+                        <a href="/index" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Technical MCQs</a>
                     </li>
                     <h3 class="menu-title"><font color="white">Extra Resources..</font></h3><!-- /.menu-title -->
 
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-book"><br>E-Books</i></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-book"></i>E-Books</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="fa fa-book"></i><a href="https://drive.google.com/file/d/1cF8dv_11ebyTQHVtOo6pmr15uYQdRaKI/view">C programming</a></li>
-                            <li><i class="fa fa-book"></i><a href="http://www.mldcollege.com/panel/programs/Object%20Oriented%20Programming%20with%20C__-Bal%20-%20E.Balagurusamy.pdf">C++</a></li>
-                            <li><i class="fa fa-book"></i><a href="http://iiti.ac.in/people/~tanimad/JavaTheCompleteReference.pdf">Java</a></li>
-                            <li><i class="fa fa-book"></i><a href="https://www.introprogramming.info/wp-content/uploads/2013/07/Books/CSharpEn/Fundamentals-of-Computer-Programming-with-CSharp-Nakov-eBook-v2013.pdf">C#</a></li>
+                            <li><i class="fa fa-book"></i><a href="https://books.goalkicker.com/CBook/" target="_blank" rel="noopener noreferrer">C programming</a></li>
+                            <li><i class="fa fa-book"></i><a href="https://books.goalkicker.com/CPlusPlusBook/" target="_blank" rel="noopener noreferrer">C++</a></li>
+                            <li><i class="fa fa-book"></i><a href="https://books.goalkicker.com/JavaBook/" target="_blank" rel="noopener noreferrer">Java</a></li>
+                            <li><i class="fa fa-book"></i><a href="https://books.goalkicker.com/CSharpBook/" target="_blank" rel="noopener noreferrer">C#</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -128,15 +112,6 @@
 
                 <div class="col-sm-7">
                     <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
-                    <div class="header-left">
-                        <button class="search-trigger"><i class="fa fa-search"></i></button>
-                        <div class="form-inline">
-                            <form class="search-form">
-                                <input class="form-control mr-sm-2" type="text" placeholder="Search ..." aria-label="Search">
-                                <button class="search-close" type="submit"><i class="fa fa-close"></i></button>
-                            </form>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="col-sm-5">
@@ -147,8 +122,6 @@
 
                         <div class="user-menu dropdown-menu">
                                 <a class="nav-link" href="#"><i class="fa fa- user"></i>My Profile</a>
-
-                                <a class="nav-link" href="#"><i class="fa fa -cog"></i>Settings</a>
 
                                 <a class="nav-link" href="/logout"><i class="fa fa-power -off"></i><b>Logout</b></a>
                         </div>
@@ -191,7 +164,7 @@
         <div class="container text-center">
             <div class="row">
             <div class="col">
-            <a href="/index" class="card-link">
+            <a href="/test1" class="card-link">
                 <div class="card" style="width: 20rem;">
                     <div class="card-body">
                       <div class="card-title">

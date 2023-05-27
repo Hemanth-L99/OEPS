@@ -51,6 +51,10 @@ def pages1():
 @app.route('/test4')
 def pages2():
    return render_template('test4.html')
+ 
+@app.route('/test1')
+def pages3():
+   return render_template('test1.html')
 
 @app.route('/result')
 def check():
@@ -58,7 +62,7 @@ def check():
     con = sql.connect('main.db')
     con.row_factory = sql.Row
     cur = con.cursor()
-    cur.execute("select * from result where username=?",(g.user,))
+    cur.execute("select * from result where username=? ORDER BY timestamps DESC",(g.user,))
     rows = cur.fetchall();
     return render_template('result.html', username=g.user, rows=rows)
 
@@ -79,13 +83,12 @@ def addrec():
           PhoneNo= request.form['pno']
 
           with sql.connect("main.db") as con:
-
             cur = con.cursor()
             cur.execute("INSERT INTO register(Email_address,Username,Password,PhoneNo)VALUES(?,?,?,?)",(Email_address,Username,Password,PhoneNo))
             con.commit()
-            con.close()
             msg = "Congrats! You have successfully registered, please login :)"
             return render_template("page-login.html", msg=msg)
+            con.close()
        except:
            #return redirect(url_for('signup'))
            message = "Account already exists, please use different Username"
@@ -107,7 +110,7 @@ def search():
     output=ta[2:-3]
     
 
-    if (MyUser=="LHemanth") & (Password=="godsay@123"):
+    if (MyUser=="Hemanth") & (Password=="hemanth@123"):
       session['user']=MyUser
       return render_template("admin.html",username=MyUser)
 
@@ -196,7 +199,22 @@ def list():
 
   rows = cur.fetchall();
   return render_template("tables-data.html",rows = rows)
-
+#.........................inserting test1 result into database.........................
+@app.route('/sub_res1', methods = ['GET'])
+def sub_res1():
+    con = sql.connect("main.db")
+    correct = int(request.args.get('correct'))
+    testname = request.args.get('testname')
+    currentTime = datetime.datetime.now()
+    resultstatus = "Failed"
+    if correct > 6:
+      resultstatus = "Passed"
+    print('*****************',testname,correct,resultstatus)
+    cur = con.cursor()
+    cur.execute("INSERT INTO result(username,correct,testname,timestamps,Status)VALUES(?,?,?,?,?)",(g.user,correct,testname,currentTime,resultstatus,))
+    con.commit()
+    con.close()
+    return redirect("/dashboard")
 #...............................inserting test2 results into database...................
 @app.route('/sub_res', methods = ['GET'])
 def sub_res():
