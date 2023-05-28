@@ -1,0 +1,73 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EduTrainTest</title>
+    <meta name="description" content="Hemanth Website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <link rel="apple-touch-icon" href="{{ url_for('.static',filename='apple-icon.png') }}">
+    <link rel="shortcut icon" href="{{ url_for('.static',filename='favicon.ico') }}">
+
+    <link rel="stylesheet" href="{{ url_for('.static',filename='assets/css/normalize.css') }}">
+    <link rel="stylesheet" href="{{ url_for('.static',filename='assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('.static',filename='assets/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('.static',filename='assets/css/themify-icons.css') }}">
+    <link rel="stylesheet" href="{{ url_for('.static',filename='assets/css/flag-icon.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('.static',filename='assets/css/cs-skin-elastic.css') }}">
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap-select.less"> -->
+    <link rel="stylesheet" href="{{ url_for('.static',filename='assets/scss/style.css') }}">
+    <link href="{{ url_for('.static',filename='assets/css/lib/vector-map/jqvmap.min.css') }}" rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
+
+</head>
+<body>
+    <div class="container rounded bg-white mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-3 border-right">
+                <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"><span class="font-weight-bold"></span><span class="text-black-50"></span><span> </span></div>
+            </div>
+            <div class="col-md-5 border-right">
+                <div class="p-3 py-5">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="text-right">Profile Settings</h4>
+                    </div>
+                    <form action = "{{ url_for('profileUpdate') }}" method = "POST">
+                    <div class="row mt-3">
+                        <div class="col-md-12"><label class="labels">Email ID</label><input type="email" class="form-control" placeholder="Email"  name="email"></div>
+                        <div class="col-md-12"><label class="labels">Phone Number</label><<input type="tel" class="form-control" placeholder="Phone-No" pattern="[0-9]{10}" title="only 10 digits should be entered" name="pno"></div>
+                    </div>
+                    <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="submit">Save Profile</button>
+                        <a href="/dashboard">
+                            <button type="button" class="btn btn-warning">Dashboard</button> </a>
+                        </div>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- Right Panel -->
+
+    <script src="{{ url_for('.static',filename='assets/js/vendor/jquery-2.1.4.min.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="{{ url_for('.static',filename='assets/js/plugins.js') }}"></script>
+    <script src="{{ url_for('.static',filename='assets/js/main.js') }}"></script>
+
+
+    <script src="{{ url_for('.static',filename='assets/js/lib/chart-js/Chart.bundle.js') }}"></script>
+    <script src="{{ url_for('.static',filename='assets/js/dashboard.js') }}"></script>
+    <script src="{{ url_for('.static',filename='assets/js/widgets.js') }}"></script>
+    <script src="{{ url_for('.static',filename='assets/js/lib/vector-map/jquery.vmap.js') }}"></script>
+    <script src="{{ url_for('.static',filename='assets/js/lib/vector-map/jquery.vmap.min.js') }}"></script>
+    <script src="{{ url_for('.static',filename='assets/js/lib/vector-map/jquery.vmap.sampledata.js') }}"></script>
+    <script src="{{ url_for('.static',filename='assets/js/lib/vector-map/country/jquery.vmap.world.js') }}"></script>
+    
+</body>
+</html>

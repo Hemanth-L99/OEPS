@@ -32,6 +32,15 @@ def signup():
 def logout():
    session.pop('user')
    return render_template('main.html')
+ 
+@app.route('/tabledata')
+def tabledata():
+  con = sql.connect('main.db')
+  con.row_factory = sql.Row
+  cur = con.cursor()
+  cur.execute("select * from register")
+  rows = cur.fetchall();
+  return render_template('tables-data.html', rows=rows)
 
 # retrieve from table usng row_factory
 # sql queries seleted data retreival
@@ -55,6 +64,10 @@ def pages2():
 @app.route('/test1')
 def pages3():
    return render_template('test1.html')
+ 
+@app.route('/userProfile')
+def profile():
+   return render_template('userProfile.html')
 
 @app.route('/result')
 def check():
@@ -132,7 +145,8 @@ def delete():
   query = ("delete from register where Username = '{MyUser}'"). format(MyUser=MyUser)
   cur.execute(query)
   rows = cur.fetchall();
-  return render_template("tables-data.html", rows=rows)
+  return render_template("admin.html", rows=rows)
+
 
 #.............feedback page..................
 @app.route('/feed', methods = ['POST'])
@@ -187,6 +201,20 @@ def index():
     #return make_response(send())
     #headers = {'Content-Type': 'text/html'}
   return render_template('index2.html')
+
+@app.route('/profileUpdate', methods=['GET','POST'])
+def profileUpdate():
+     if request.method == 'POST':
+       Email_address = request.form['email']
+       PhoneNo= request.form['pno']
+
+       with sql.connect("main.db") as con:
+         cur = con.cursor()
+         cur.execute("UPDATE register SET Email_address=?,PhoneNo=? where username=? ",(Email_address,PhoneNo, g.user))
+         con.commit()
+         return render_template("Dashboard.html")
+         con.close()
+       
 #..........................................tables(database).............................................................................
 
 @app.route('/list')
