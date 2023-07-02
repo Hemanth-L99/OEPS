@@ -3,11 +3,10 @@ prerequisites:
 Python 3 - Version 3.10.8 or higher
 
 Follow the below steps:
-1. unzip the zip file
-2. Open "2002036515_MCSP060_Project" folder
-3. Right click --> Click on "Open in terminal" or go to CMD and go to this folder
-4. pip install flask
-5. python flask_app.py runserver
-6. Go to browser --> enter the URL: http://127.0.0.1:5000 
+1. Open "2002036515_MCSP060_Project" folder
+2. Right click --> Click on "Open in terminal" or go to CMD and go to this folder
+3. pip install flask
+4. python flask_app.py runserver
+5. Go to browser --> enter the URL: http://127.0.0.1:5000 
 
 

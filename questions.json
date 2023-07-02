@@ -31,30 +31,39 @@
                 ["q32","36 men can complete a piece of work in 18 days. In how many days will 27 men complete the same work?",["12","18","22","24"],"d"]
                 ],
     "section3": [
-                ["q41","What is your name?",["Ram","Prem","Raghu","peter"],"Prem"],
-                ["q42","Where are you?",["bangalore","Pune","Chennai"],"bangalore"],
-                ["q43","What is your fav food?",["a","b","c","d"],"b"],
-                ["q44","q4?",["a","b","c","d"],"b"],
-                ["q45","q5?",["a","b","c","d"],"b"],
-                ["q26","26?",["a","b","c","d"],"b"],
-                ["q27","27?",["a","b","c","d"],"b"],
-                ["q28","28?",["a","b","c","d"],"b"],
-                ["q29","29?",["a","b","c","d"],"b"],
-                ["q30","30?",["a","b","c","d"],"b"]
+                [ "What was the day on 15th august 1947 ?", "Saturday", "Friday", "Thursday", "B" ],
+                [ "A and B invest in a business in the ratio 3 : 2. If 5% of the total profit goes to charity and A's share is Rs. 855, the total profit is ?", "1560", "1200", "1500", "C" ],
+                [ "Today is Monday. After 61 days, it will be?", "Saturday", "Friday", "Thursday", "A" ],
+                [ "Two numbers are respectively 20% and 50% more than a third number. The ratio of the two numbers is:", "2:4", "5:7", "4:5", "C" ],
+                [ "A problem is given to three students whose chances of solving it are 1/2, 1/3 and 1/4 respectively. What is the probability that the problem will be solved?", "2/3", "1/2", "3/4", "C" ],
+                [ "How many pairs of letters are there in the word CASTRAPHONE which have as many letters between them in the word as in the alphabet?", "6", "7", "9", "A" ],
+                [ "A is B's sister. C is B's mother. D is C's father. E is D's mother. Then, how is A related to D?", "Daughter", "Grandmother", "Granddaughter", "C" ],
+                [ "If selling price is doubled, the profit triples. Find the profit percent ?", "200%", "400%", "100%", "C" ],
+                [ "If 20% of a = b, then b% of 20 is the same as :", "4% of a", "6% of a", "8% of a", "A" ],
+                [ "Out of 7 consonants and 4 vowels, how many words of 3 consonants and 2 vowels can be formed?", "25600", "2520", "25200", "C" ]
                 ],
     "section4": [
-                ["q61","What is your name?",["Ram","Prem","Raghu","peter"],"Prem"],
-                ["q62","Where are you?",["bangalore","Pune","Chennai"],"bangalore"],
-                ["q63","What is your fav food?",["a","b","c","d"],"b"],
-                ["q64","q4?",["a","b","c","d"],"b"],
-                ["q65","q5?",["a","b","c","d"],"b"]
+                [ "What was the day on 15th august 1947 ?", "Saturday", "Friday", "Thursday", "B" ],
+                [ "A and B invest in a business in the ratio 3 : 2. If 5% of the total profit goes to charity and A's share is Rs. 855, the total profit is ?", "1560", "1200", "1500", "C" ],
+                [ "Today is Monday. After 61 days, it will be?", "Saturday", "Friday", "Thursday", "A" ],
+                [ "Two numbers are respectively 20% and 50% more than a third number. The ratio of the two numbers is:", "2:4", "5:7", "4:5", "C" ],
+                [ "A problem is given to three students whose chances of solving it are 1/2, 1/3 and 1/4 respectively. What is the probability that the problem will be solved?", "2/3", "1/2", "3/4", "C" ],
+                [ "How many pairs of letters are there in the word CASTRAPHONE which have as many letters between them in the word as in the alphabet?", "6", "7", "9", "A" ],
+                [ "A is B's sister. C is B's mother. D is C's father. E is D's mother. Then, how is A related to D?", "Daughter", "Grandmother", "Granddaughter", "C" ],
+                [ "If selling price is doubled, the profit triples. Find the profit percent ?", "200%", "400%", "100%", "C" ],
+                [ "If 20% of a = b, then b% of 20 is the same as :", "4% of a", "6% of a", "8% of a", "A" ],
+                [ "Out of 7 consonants and 4 vowels, how many words of 3 consonants and 2 vowels can be formed?", "25600", "2520", "25200", "C" ]
                 ],
     "section5": [
-                ["q81","What is your name?",["Ram","Prem","Raghu","peter"],"Prem"],
-                ["q82","Where are you?",["bangalore","Pune","Chennai"],"bangalore"],
-                ["q83","What is your fav food?",["a","b","c","d"],"b"],
-                ["q84","q4?",["a","b","c","d"],"b"],
-                ["q85","q5?",["a","b","c","d"],"b"]
+                [ "What was the day on 15th august 1947 ?", "Saturday", "Friday", "Thursday", "B" ],
+                [ "A and B invest in a business in the ratio 3 : 2. If 5% of the total profit goes to charity and A's share is Rs. 855, the total profit is ?", "1560", "1200", "1500", "C" ],
+                [ "Today is Monday. After 61 days, it will be?", "Saturday", "Friday", "Thursday", "A" ],
+                [ "Two numbers are respectively 20% and 50% more than a third number. The ratio of the two numbers is:", "2:4", "5:7", "4:5", "C" ],
+                [ "A problem is given to three students whose chances of solving it are 1/2, 1/3 and 1/4 respectively. What is the probability that the problem will be solved?", "2/3", "1/2", "3/4", "C" ],
+                [ "How many pairs of letters are there in the word CASTRAPHONE which have as many letters between them in the word as in the alphabet?", "6", "7", "9", "A" ],
+                [ "A is B's sister. C is B's mother. D is C's father. E is D's mother. Then, how is A related to D?", "Daughter", "Grandmother", "Granddaughter", "C" ],
+                [ "If selling price is doubled, the profit triples. Find the profit percent ?", "200%", "400%", "100%", "C" ],
+                [ "If 20% of a = b, then b% of 20 is the same as :", "4% of a", "6% of a", "8% of a", "A" ],
+                [ "Out of 7 consonants and 4 vowels, how many words of 3 consonants and 2 vowels can be formed?", "25600", "2520", "25200", "C" ]
                 ]
-
 }
